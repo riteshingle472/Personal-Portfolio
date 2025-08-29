@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Ingle Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+    <header id="nav">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <i class="fa-solid fa-xmark hide" id="close-nav"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">My Skils</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button><i class="fa-solid fa-sun"></i></i class="fa-solid fa-moon"> <i></i></button>
+                <div id="hamburger">
+                    <i class="fa-solid fa-bars hide"></i>
+                </div>
+            </nav>
+    </header>
+    <!-- MAin content -->
+    <main>
+        <!-- ----------Front ---------- -->
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <h1>Hii , I am <span>Ritesh Ingle</span><br>FullStack<span><br>Web Developer</span></h1>
+                    <button class="btn">Download Resume</button>
+                    <a href="#contact"><button class="btn">Contact Me</button></a>
+                </div>
+                <div class="photo">
+                    <img src="images/user.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1" id="about-col-1">
+                        <img src="images/u.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I’m Ritesh Ingle , a Computer Science student with a strong interest in Web Developement. <br>
+                            Right now, I’m exploring web development and constantly improving my coding skills. My aim is simple — keep learning, keep building, and one day become a skilled full-stack developer.
+                            My goal is to become a skilled Full Stack Developer and work on impactful products.
+                        </p>
+                        <div class="tab-title" id="tab-title">
+                            <p class="tab-links active-link" onclick="tabs('skills')">Skills</p>
+                            <p class="tab-links" onclick="tabs('experience')">Experience</p>
+                            <p class="tab-links" onclick="tabs('education')">Education</p>
+                        </div>
+                        <div class="tab-content" id="tab-content">
+                            <ul id="skills" class="tab-hide active-tab">
+                                <li><span>Front-end</span> <br> Building Awesome Front-end Of Web/App Application</li>
+                                <li><span>Back-end </span><br> Building Strong And Secure Back-end</li>
+                                <li><span>FullStack</span><br>Front-end + Back-end + DataBase</li>
+                                <li><span>UI/UX</span><br> Figma</li>
+                                <li><span>Gen AI</span><br></li>
+                            </ul>
+                            <ul id="experience" class="tab-hide">
+                                <li><span>Learning</span></li>
+                            </ul>
+                            <ul id="education" class="tab-hide">
+                                <li><span>Gaurav Vaibhav Higher Secondary School</span><br>10 <sup>th</sup> : 54%</li>
+                                <li><span>Shri Ashoka Vidya Niketan</span><br> 12 <sup>th</sup> : 68%</li>
+                                <li><span>Renaissance University</span> : BCA <br> CGPP : 8.1</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ----------Skills------------- -->
+
+        <div id="skill">
+            <div class="container">
+                <h1 class="sub-title">My Skills<h1>
+                    <div class="skill-list">
+                        <div class="skill-container">
+                             <h2>Front-end <i class="fa-solid fa-code"></i></h2>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <h3>HTML</h3>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-css"></i>
+                                <h3>CSS</h3>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-square-js"></i>
+                                <h3>JavaScript</h3>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <h3>React</h3>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <h2>Back-end <i class="fa-solid fa-laptop"></i></h2>
+                            <div>
+                                <img src="images/springcore.png" alt="">
+                                <h3>Spring Core</h3>
+                            </div>
+                            <div>
+                                <img src="images/springboot.png" alt="">
+                                <h3>Spring Boot</h3>
+                            </div>
+                            <div>
+                                <img src="images/microservices.png" alt="">
+                                <h3>MicroServices</h3>
+                            </div>
+                            <div>
+                                <img src="images/kafka-logo.png" alt="">
+                                <h3>Kafka</h3>
+                            </div>
+                            <div>
+                                <img src="images/redis.png" alt="">
+                                <h3>Redis</h3>
+                            </div>
+                            <div>
+                                <img src="images/docker.png" alt="">
+                                <h3>Docker</h3>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                           <h2>Language <i class="fa-solid fa-laptop"></i></h2>
+                            <div>
+                                <i class="fa-brands fa-c"></i>
+                                <h3>C</h3>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-code"></i>
+                                <h3>C++</h3>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-java"></i>
+                                <h3>Java</h3>
+                            </div>
+                             <div>
+                                <i class="fa-brands fa-square-js"></i>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <h2>Tool <i class="fa-solid fa-laptop"></i></h2>
+                            <div>
+                                <i class="fa-brands fa-git-alt"></i>
+                                <h3>Git</h3>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-github"></i>
+                                <h3>Github</h3>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-code"></i>
+                                <h3>VSCode</h3>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <h3>Eclipse</h3>
+                            </div>
+                         </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- --------------------Projects-------------------- -->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Student Management system</h2>
+                            <p>This is my Student-Management-System Project which I build with core java here in this project we can store student data like(name , address , id , gamil , college ,contact etc) and we can add delete search student here this link of github where you can check it .
+                            </p>
+                            <a href="https://github.com/riteshingle472/Student-Management-System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Student-Management-System.git"><i class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Fastrack Web site Clone</h2>
+
+                            <p>I am build fastrack clone using html css and js with a basic leve of html and css JavaScript</p>
+
+                            <a href="https://github.com/riteshingle472/E-commerce-Website-Fastrack-Clone-Website-.git"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/E-commerce-Website-Fastrack-Clone-Website-.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Coffee Site</h2>
+
+                            <p>It is a complete responsive bakery website with using intermidiate level of Html Css and Basic level of js</p>
+
+                            <a href="https://github.com/riteshingle472/Coffee-Site.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Coffee-Site.git"><i class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Portfolio</h2>
+
+                            <p>My first portfolio website using html ans css</p>
+
+                            <a href="https://github.com/riteshingle472/My-Portfolio.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/My-Portfolio.git"><i class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Stone Paper Scissor Game</h2>
+
+                            <p>A Stone Paper Scissor game where I build it using Html css and js</p>
+
+                            <a href="https://github.com/riteshingle472/Stone-Paper-Scissor.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Stone-Paper-Scissor.git"><i class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Tic Tac Toe Game</h2>
+
+                            <p>Tic Tac Teo game it build with html css and js . It design and animation are looking very cool and aesthetic .</p>
+
+                            <a href="https://github.com/riteshingle472/Tic-Tac-Toe.git"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Tic-Tac-Toe.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------Contact Form --------------------- -->
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> riteshingle472@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> 9340549967</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-square-linkedin"></i></a>
+                            <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/ritesh_ingle_07?igsh=MWE0OXI2emFia21sMA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/riteshingle472"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="" download><button class="btn">Download</button></a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name " id="name" required>
+                            <small class="error" id="nameErr"></small>
+
+                            <input type="email" name="Email" placeholder="Your E-mail" id="email">
+                            <small class="error" id="emailErr"  style="display: none;"></small>
+
+                            <input type="number" name="Number" placeholder="Contact no." id="phoneNumber" required>
+                            <small class="error" id="numberErr" ></small>
+
+                            <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="btn subbtn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------Copyright----------------------- -->
+        <div class="copy">
+            <p>Copyright &copy portfolio. Made with <i class="fa-solid fa-heart"></i> By Ritesh Ingle</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
