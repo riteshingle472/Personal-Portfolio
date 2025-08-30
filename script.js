@@ -50,13 +50,13 @@ skill.forEach((data, indx) => {
 // Hamburger
 
 document.querySelector("#hamburger").addEventListener("click", (data) => {
-  document.querySelector("nav ul").style.transition = ".5s ease-in";
+  document.querySelector("nav ul").style.transition = ".3s ease-in";
   document.querySelector("nav ul").style.right = "0";
 });
 
 document.getElementById("close-nav").addEventListener("click", () => {
   document.querySelector("nav ul").style.right = "-200px";
-  document.querySelector("nav ul").style.transition = ".5s ease-in-out";
+  document.querySelector("nav ul").style.transition = ".3s ease-in-out";
 });
 
 document.querySelectorAll("nav ul li").forEach((data) => {

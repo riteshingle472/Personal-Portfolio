@@ -219,7 +219,7 @@ nav ul li:hover::after {
     cursor: pointer;
     font-size: 18px;
     position: relative;
-    color: var(--mid-white);
+    color: hotpink;
 }
 
 .tab-links::after {
@@ -520,73 +520,6 @@ nav .hide {
     display: none;
 }
 
-@media only screen and (max-width:600px) {
-    nav .hide {
-        display: block;
-        font-size: 24px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 30px; 
-        width: 100%; 
-        padding: 0 8%;
-    }
-    nav ul li::after {
-    content: '';
-    width: 0%;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    background: var(--light-red);
-    height: 2px;
-    transition: 0.3s;
-}
-
-nav ul li:hover::after {
-    width: 100%;
-    color: var(--light-red);
-}
-
-    nav ul {
-        background-color: var(--light-red);
-        position: fixed;
-        top: 0;
-        right: -200px;
-        padding-top: 0px;
-        width: 200px;
-        height: 100%;
-        z-index: 2;
-
-    }
-
-    nav ul li {
-        padding-top: 50px;
-        display: block;
-        position: relative;
-    }
-
-    nav ul .hide {
-        position: absolute;
-        top: 2%;
-    }
-
-    .logo {
-        height: 50px;
-        width: 75px;
-    }
-
-    .navUlToggle {
-        background-color: gold;
-    }
-
-    .sub-title {
-        font-size: 30px;
-    }
-
-}
-
 /* Togle Light theme Class */
 
 .navToggle {
@@ -670,7 +603,72 @@ nav ul li:hover::after {
 .header-textH1Toggle {
     color: silver !important;
 }
+@media only screen and (max-width:600px) {
+    nav .hide {
+        display: block;
+        font-size: 24px;
+    }
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px; 
+        width: 100%; 
+        padding: 0 8%;
+    }
+    nav ul li::after {
+    content: '';
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background: var(--light-red);
+    height: 2px;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    color: var(--light-red);
+}
+
+    nav ul {
+        background-color: var(--light-red);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        padding-top: 0px;
+        width: 200px;
+        height: 100%;
+        z-index: 2;
+
+    }
+
+    nav ul li {
+        padding-top: 50px;
+        display: block;
+        position: relative;
+    }
+
+    nav ul .hide {
+        position: absolute;
+        top: 2%;
+    }
+
+    .logo {
+        height: 50px;
+        width: 75px;
+    }
+
+    .navUlToggle {
+        background-color: gold;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+}
 
 /* Only nav bar */
 @media only screen and (max-width:500px) {
