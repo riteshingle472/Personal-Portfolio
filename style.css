@@ -112,8 +112,8 @@ nav ul li:hover::after {
     display: none;
     font-size: 24px;
     position: fixed;
-    top: 2%;
-    right: 170px;
+    top: 1%;
+    right: 10px;
     z-index: 1000;
 }
 
@@ -650,7 +650,7 @@ nav .hide {
         top: 0;
         right: -200px;
         padding-top: 0px;
-        width: 200px;
+        width: auto;
         height: 100%;
         z-index: 2;
         transition: 0.3s ease-in-out;
