@@ -50,21 +50,30 @@ skill.forEach((data, indx) => {
 // Hamburger
 
 document.querySelector("#hamburger").addEventListener("click", (data) => {
-  document.querySelector("nav ul").style.transition = ".3s ease-in";
   document.querySelector("nav ul").style.right = "0";
+  setTimeout(function () {
+    document.querySelector("#close-nav").style.display = "block";
+  }, 350);
 });
 
 document.getElementById("close-nav").addEventListener("click", () => {
   document.querySelector("nav ul").style.right = "-200px";
   document.querySelector("nav ul").style.transition = ".3s ease-in-out";
+  document.querySelector("#close-nav").style.display = "none";
 });
 
 document.querySelectorAll("nav ul li").forEach((data) => {
   data.addEventListener("click", () => {
     document.querySelector("nav ul").style.right = "-200px";
+    document.querySelector("#close-nav").style.display = "none";
   });
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 600) {
+    document.querySelector("#close-nav").style.display = "none";
+  }
+});
 // Responsiveness
 
 function updateProject() {

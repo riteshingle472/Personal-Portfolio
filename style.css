@@ -56,7 +56,7 @@ nav {
     background-color: var(--black-clr);
     z-index: 1000;
     scroll-margin-top: 20px;
-    padding: 0 0%;
+    padding: 0;
 }
 
 .logo {
@@ -64,7 +64,7 @@ nav {
     height: 70px;
 }
 
-nav button{
+nav button {
     color: var(--white-clr);
     font-size: 24px;
     padding: 10px;
@@ -73,7 +73,8 @@ nav button{
     border-radius: 50%;
 
 }
-nav button:hover{
+
+nav button:hover {
     background-color: #ffffff23;
     border-radius: 50%;
 }
@@ -105,6 +106,15 @@ nav ul li::after {
 nav ul li:hover::after {
     width: 100%;
     color: var(--light-red);
+}
+
+#close-nav {
+    display: none;
+    font-size: 24px;
+    position: fixed;
+    top: 2%;
+    right: 170px;
+    z-index: 1000;
 }
 
 #header {
@@ -603,6 +613,7 @@ nav .hide {
 .header-textH1Toggle {
     color: silver !important;
 }
+
 @media only screen and (max-width:600px) {
     nav .hide {
         display: block;
@@ -612,25 +623,26 @@ nav .hide {
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 0 30px; 
-        width: 100%; 
+        padding: 0 30px;
+        width: 100%;
         padding: 0 8%;
     }
-    nav ul li::after {
-    content: '';
-    width: 0%;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    background: var(--light-red);
-    height: 2px;
-    transition: 0.3s;
-}
 
-nav ul li:hover::after {
-    width: 100%;
-    color: var(--light-red);
-}
+    nav ul li::after {
+        content: '';
+        width: 0%;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background: var(--light-red);
+        height: 2px;
+        transition: 0.3s;
+    }
+
+    nav ul li:hover::after {
+        width: 100%;
+        color: var(--light-red);
+    }
 
     nav ul {
         background-color: var(--light-red);
@@ -641,6 +653,7 @@ nav ul li:hover::after {
         width: 200px;
         height: 100%;
         z-index: 2;
+        transition: 0.3s ease-in-out;
 
     }
 
@@ -650,9 +663,9 @@ nav ul li:hover::after {
         position: relative;
     }
 
-    nav ul .hide {
+    nav .hide {
         position: absolute;
-        top: 2%;
+        top: 12px;
     }
 
     .logo {
