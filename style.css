@@ -366,7 +366,7 @@ nav ul li:hover::after {
 }
 
 .right {
-    left: 60%;
+    left: 55%;
 }
 
 .text-box {
@@ -409,7 +409,7 @@ nav ul li:hover::after {
     width: 6px;
     position: absolute;
     top: 0;
-    left: 52%;
+    left: 50.5%;
     background-color: var(--mid-gray);
     margin: -3px;
     z-index: 1;
@@ -421,7 +421,7 @@ nav ul li:hover::after {
     border-radius: 50%;
     text-align: center;
     position: absolute;
-    left: 52%;
+    left: 50.5%;
     top: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid var(--light-gray);
