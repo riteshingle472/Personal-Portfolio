@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Ingle Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+    <header id="nav">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <i class="fa-solid fa-xmark close-nav" id="close-nav"></i>
+            <ul class="navActive">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">My Skils</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button>
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <div id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- MAin content -->
+    <main>
+        <!-- ----------Front ---------- -->
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <h1>Hii , I am <span>Ritesh Ingle</span><br>FullStack<span><br>Web Developer</span></h1>
+                    <a href="#contact"><button class="btn">Contact Me</button></a>
+                </div>
+                <div class="photo">
+                    <img src="images/user.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1" id="about-col-1">
+                        <img src="images/AboutUser.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I’m Ritesh Ingle , a Computer Science student with a strong interest in Web Developement.
+                            <br>
+                            Right now, I’m exploring web development and constantly improving my coding skills. My aim
+                            is simple — keep learning, keep building, and one day become a skilled full-stack developer.
+                            My goal is to become a skilled Full Stack Developer and work on impactful products.
+                        </p>
+                        <div class="tab-title" id="tab-title">
+                            <p class="tab-links active-link" onclick="tabs('skills')">Skills</p>
+                            <p class="tab-links" onclick="tabs('experience')">Experience</p>
+                            <p class="tab-links" onclick="tabs('education')">Education</p>
+                        </div>
+                        <div class="tab-content" id="tab-content">
+                            <ul id="skills" class="tab-hide active-tab">
+                                <li><span>Front-end</span> <br> Building Awesome Front-end Of Websites</li>
+                                <li><span>Back-end </span><br> Building Strong And Secure Back-end</li>
+                                <li><span>FullStack</span><br>Front-end + Back-end + DataBase</li>
+                                <li><span>UI/UX</span><br> Figma</li>
+                            </ul>
+                            <ul id="experience" class="tab-hide">
+                                <li><span>Learning</span></li>
+                            </ul>
+                            <ul id="education" class="tab-hide">
+                                <li><span>Gaurav Vaibhav Higher Secondary School</span><br>10 <sup>th</sup> : 54%</li>
+                                <li><span>Shri Ashoka Vidya Niketan</span><br> 12 <sup>th</sup> : 68%</li>
+                                <li><span>Renaissance University</span> : BCA <br> CGPA : 8.1</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ----------Skills------------- -->
+
+        <div id="skill">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="skill-list">
+                    <div class="skill-container">
+                        <h2>Front-end <i class="fa-solid fa-code"></i></h2>
+                        <div>
+                            <i class="fa-brands fa-html5"></i>
+                            <h3>HTML</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-css"></i>
+                            <h3>CSS</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-react"></i>
+                            <h3>React</h3>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <h2>Back-end <i class="fa-solid fa-laptop"></i></h2>
+                        <div>
+                            <img src="images/springcore.png" alt="">
+                            <h3>Spring Core</h3>
+                        </div>
+                        <div>
+                            <img src="images/springboot.png" alt="">
+                            <h3>Spring Boot</h3>
+                        </div>
+                        <div>
+                            <img src="images/microservices.png" alt="">
+                            <h3>MicroServices</h3>
+                        </div>
+                        <div>
+                            <img src="images/kafka-logo.png" alt="">
+                            <h3>Kafka</h3>
+                        </div>
+                        <div>
+                            <img src="images/redis.png" alt="">
+                            <h3>Redis</h3>
+                        </div>
+                        <div>
+                            <img src="images/docker.png" alt="">
+                            <h3>Docker</h3>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <h2>Language <i class="fa-solid fa-laptop"></i></h2>
+                        <div>
+                            <i class="fa-brands fa-c"></i>
+                            <h3>C</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h3>C++</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-java"></i>
+                            <h3>Java</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-square-js"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <h2>Tool <i class="fa-solid fa-laptop"></i></h2>
+                        <div>
+                            <i class="fa-brands fa-git-alt"></i>
+                            <h3>Git</h3>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-github"></i>
+                            <h3>Github</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h3>VSCode</h3>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <h3>Eclipse</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------Serivices------------------ -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Servises</h1>
+                <div class="services-container">
+                    <div class="services-box">
+                        <img src="images/uiux.png" alt="">
+                        <div class="layer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                            <h2>UI/UX</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae consequatur eligendi sed quas amet iure. Aperiam pariatur possimus quod.</p>
+                        </div>
+                    </div>
+                    <div class="services-box">
+                        <img src="images/frontend.jpg" alt="">
+                        <div class="layer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                            <h2>Front-end</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae consequatur eligendi sed quas amet iure. Aperiam pariatur possimus quod.</p>
+                        </div>
+                    </div>
+                    <div class="services-box">
+                        <img src="images/backend.webp" alt="">
+                        <div class="layer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                            <h2>Back-end</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae consequatur eligendi sed quas amet iure. Aperiam pariatur possimus quod.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- --------------------Projects-------------------- -->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="project-list">
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Student Management system</h2>
+                            <p>This is my Student-Management-System Project which I build with core java here in this
+                                project we can store student data like(name , address , id , gamil , college ,contact
+                                etc) and we can add delete search student here this link of github where you can check
+                                it .
+                            </p>
+                            <a href="https://github.com/riteshingle472/Student-Management-System.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Student-Management-System.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Fastrack Web site Clone</h2>
+
+                            <p>I am build fastrack clone using html css and js with a basic leve of html and css
+                                JavaScript</p>
+
+                            <a href="https://github.com/riteshingle472/E-commerce-Website-Fastrack-Clone-Website-.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>  Live Demo</a>
+                            <a href="https://github.com/riteshingle472/E-commerce-Website-Fastrack-Clone-Website-.git"><i
+                            class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Bakery website</h2>
+
+                            <p>It is a complete responsive bakery website with using intermidiate level of Html Css and
+                                Basic level of js</p>
+
+                            <a href="https://github.com/riteshingle472/Bakery-Website.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Bakery-Website.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Portfolio</h2>
+
+                            <p>My first portfolio website using html ans css</p>
+
+                            <a href="https://github.com/riteshingle472/My-Portfolio.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/My-Portfolio.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box left">
+                            <h2>Stone Paper Scissor Game</h2>
+
+                            <p>A Stone Paper Scissor game where I build it using Html css and js</p>
+
+                            <a href="https://github.com/riteshingle472/Stone-Paper-Scissor.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Stone-Paper-Scissor.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="time-line">
+                        <div class="text-box right">
+                            <h2>Tic Tac Toe Game</h2>
+
+                            <p>Tic Tac Teo game it build with html css and js . It design and animation are looking very
+                                cool and aesthetic .</p>
+
+                            <a href="https://github.com/riteshingle472/Tic-Tac-Toe.git"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="https://github.com/riteshingle472/Tic-Tac-Toe.git"><i
+                                    class="fa-brands fa-github"></i> Github</a>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------Contact Form --------------------- -->
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> riteshingle472@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9340549967</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-square-linkedin"></i></a>
+                            <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/ritesh_ingle_07?igsh=MWE0OXI2emFia21sMA=="><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/riteshingle472"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="" download><button class="btn">Download</button></a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="" name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name " id="name" required>
+                            <small class="error" id="nameErr"></small>
+
+                            <input type="email" name="Email" placeholder="Your E-mail" id="email">
+                            <small class="error" id="emailErr" style="display: none;"></small>
+
+                            <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="btn subbtn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------Copyright----------------------- -->
+        <div class="copy">
+            <p>Copyright &copy portfolio. Made with <i class="fa-solid fa-heart"></i> By Ritesh Ingle</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0Ajwo3u9r6TP-Gau-p_wCmgUheeyaMfV1ix_QThVG91JeRPkoOMbqlrkwB8RhjqAs/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
